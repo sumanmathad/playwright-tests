@@ -17,7 +17,7 @@ test('Launch Browser through new browser context',async({browser})=>{
    await expect(page).toHaveTitle('Google');
 });
 
-test.only('Login to app and verify the landing page', async({page})=>{
+test('Login to app and verify the landing page', async({page})=>{
    await page.goto('https://the-internet.herokuapp.com/');
    await expect(page).toHaveTitle('The Internet');
    await page.locator("a[href='/login']").click();
